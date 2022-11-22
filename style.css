@@ -66,7 +66,21 @@ h2 {
   background-color: green;
   border-radius: 50%;
   animation: bounce 2s infinite;
+}
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(90px);
+  }
+  80% {
+    transform: translateY(110px);
+  }
+  20%, 60%, 100% {
+    transform: translateY(130px);
+  }
 }
 
 /* --- EXERCICE 3 : LODAER --- */
@@ -103,18 +117,59 @@ h2 {
   }
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
+/* --- EXERCICE 4 : FAIRE LA QUEUE --- */
+
+#queue > div {
+  background-color: lightsalmon;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#queue > div:nth-child(1) {
+  animation: queue 10s infinite linear;
+}
+
+#queue > div:nth-child(2) {
+  animation: queue 10s infinite linear 1s;
+}
+
+#queue > div:nth-child(3) {
+  animation: queue 10s infinite linear 2s;
+}
+
+#queue > div:nth-child(4) {
+  animation: queue 10s infinite linear 3s;
+}
+
+#queue > div:nth-child(5) {
+  animation: queue 10s infinite linear 4s;
+}
+
+#queue > div:nth-child(6) {
+  animation: queue 10s infinite linear 5s;
+}
+
+@keyframes queue {
+  20% {
+    transform: translate(676px) rotate(360deg);
+    background-color: lightgreen;
   }
-  40% {
-    transform: translateY(90px);
+  70% {
+    transform: translate(676px, 230px) rotate(720deg);
+    background-color: lightcoral;
   }
   80% {
-    transform: translateY(110px);
+    transform: translateY(230px) rotate(1080deg);
+    background-color: lightblue;
   }
-  20%, 60%, 100% {
-    transform: translateY(130px);
+  100% {
+  rotate(1440deg);
+    background-color: lightsalmon;
   }
 }
 
