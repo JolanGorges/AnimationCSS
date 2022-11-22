@@ -69,6 +69,40 @@ h2 {
 
 }
 
+/* --- EXERCICE 3 : LODAER --- */
+
+#loader {
+  margin-top: 20px;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+#loader > div {
+  height: 92px;
+  width: 92px;
+  border-radius: 50%;
+  border: 1px solid black;
+  animation: loader 3s infinite linear;
+}
+
+#loader > div:nth-child(2) {
+  animation-delay: 1s;
+}
+
+#loader > div:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes loader {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: #000;
+  }
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);
