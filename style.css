@@ -173,6 +173,87 @@ h2 {
   }
 }
 
+/* --- EXERCICE 5 : ANIMATION 3D --- */
+
+#carousel {
+  position: relative;
+  width: 150px;
+  height: 20px;
+  top: 84px;
+  left: 40px;
+  animation: carousel 10s infinite linear;
+  transform-style: preserve-3d;
+}
+
+@keyframes carousel {
+  25% {
+    transform: translateX(490px) rotateY(90deg) rotateX(90deg);
+  }
+  50% {
+    transform: translate(490px, 264px) rotateY(180deg) rotateX(180deg);
+  }
+  75% {
+    transform: translateY(264px) rotateY(270deg) rotateX(270deg);
+  }
+  100% {
+  rotateY(360deg) rotateX(360deg);
+  }
+}
+
+#carousel > div {
+  position: absolute;
+  left: 65px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#carousel > div:nth-child(1) {
+  background-color: lightsalmon;
+  transform: rotateY(0deg) translateZ(75px);
+}
+
+#carousel > div:nth-child(2) {
+  background-color: lightgreen;
+  transform: rotateY(40deg) translateZ(75px);
+}
+
+#carousel > div:nth-child(3) {
+  background-color: lightcoral;
+  transform: rotateY(80deg) translateZ(75px);
+}
+
+#carousel > div:nth-child(4) {
+  background-color: lightblue;
+  transform: rotateY(120deg) translateZ(75px);
+}
+
+#carousel > div:nth-child(5) {
+  background-color: lightcyan;
+  transform: rotateY(160deg) translateZ(75px);
+}
+
+#carousel > div:nth-child(6) {
+  background-color: lightyellow;
+  transform: rotateY(200deg) translateZ(75px);
+}
+
+#carousel > div:nth-child(7) {
+  background-color: lightgray;
+  transform: rotateY(240deg) translateZ(75px);
+}
+
+#carousel > div:nth-child(8) {
+  background-color: lightpink;
+  transform: rotateY(280deg) translateZ(75px);
+}
+
+#carousel > div:nth-child(9) {
+  background-color: lightseagreen;
+  transform: rotateY(320deg) translateZ(75px);
+}
+
 #menu {
   position: fixed;
   top: 8px;
