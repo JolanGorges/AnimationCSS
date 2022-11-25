@@ -254,6 +254,8 @@ h2 {
   transform: rotateY(320deg) translateZ(75px);
 }
 
+/* --- EXERCICE 6 : MENU --- */
+
 #menu {
   position: fixed;
   top: 8px;
@@ -262,6 +264,11 @@ h2 {
   height: 25px;
   background-color: #000;
   border-radius: 25px;
+  transition: height 2s ease;
+}
+
+#menu:hover {
+  height: 886px;
 }
 
 #menu > p {
